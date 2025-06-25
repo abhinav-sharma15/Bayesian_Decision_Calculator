@@ -1,12 +1,32 @@
 import streamlit as st
-from PIL import Image
 
-st.set_page_config(page_title="Bayesian Decision Calculator", page_icon="🎯", layout="centered")
+st.set_page_config(
+    page_title="Bayesian Decision Calculator",
+    page_icon="🎯",
+    layout="centered",
+)
 
 st.title("🎯 Bayesian Decision Calculator")
-st.subheader("Compute posterior probabilities and make better decisions.")
 
-st.write("Use the sidebar to navigate to the calculator, examples, or learn more about Bayesian decision theory.")
+st.markdown("""
+Welcome to the **Bayesian Decision Calculator**!  
+Use this tool to help make better decisions under uncertainty using Bayesian reasoning.
 
-#image = Image.open("assets/diagram.png")
-#st.image(image, caption='Bayesian Decision Flow', use_column_width=True)
+---
+
+### 📊 Features:
+- Compute posterior probabilities from your priors and evidence.
+- Compare decisions based on expected utilities.
+- Learn how Bayesian decision theory works.
+- Explore real-world examples.
+
+---
+
+👉 Select a page from the sidebar to get started:
+- **Calculator:** Run your own decision analysis.
+- **Examples:** Try preset real-world examples.
+- **Learn More:** Understand the theory.
+- **About:** About this app.
+""")
+
+#st.image("assets/bayes_diagram.png", caption="Bayesian Decision Flow", use_column_width=True)
