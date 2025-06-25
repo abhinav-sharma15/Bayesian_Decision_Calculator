@@ -8,5 +8,5 @@ st.subheader("Compute posterior probabilities and make better decisions.")
 
 st.write("Use the sidebar to navigate to the calculator, examples, or learn more about Bayesian decision theory.")
 
-image = Image.open("assets/diagram.png")
-st.image(image, caption='Bayesian Decision Flow', use_column_width=True)
+#image = Image.open("assets/diagram.png")
+#st.image(image, caption='Bayesian Decision Flow', use_column_width=True)
